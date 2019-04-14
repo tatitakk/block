@@ -6,7 +6,7 @@ class Blockchain(object):
 
 
 
-    def new_blck(self):
+    def new_block(self):
         #creation new block and adding
         pass 
 
