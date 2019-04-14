@@ -12,12 +12,23 @@ class Blockchain(object):
 
 
 
-    def new_transaction(self):
-        #adding new transaction in list
-        pass
 
 
-    @hashing
+
+    def new_transaction(self, sender, recipient, amount):
+        self.current_transaction.append({
+            'sender':sender,
+            'recipient':recipient,
+            'amount' : amount,
+            })
+
+        return self.last_block['index'] + 1
+
+
+
+
+
+    @staticmethod  
     def hash(self):
         #hashing block 
         pass
